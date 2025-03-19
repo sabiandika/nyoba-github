@@ -1,4 +1,11 @@
-print("Hello World")
-print("sabiandika ganteng psycho dingin coool abiezzzzzz")
-print("kalo muncul auto tidur nyenyak")
-print("sabiparzzz")
+# Belajar Data
+text = "belajar data"
+
+# list untuk
+print(list(text))
+
+# set untuk
+print(set(text))
+
+# tuple untuk
+print(tuple(text))
