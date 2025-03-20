@@ -11,8 +11,8 @@ else:
  # nilai awal j = 0
 j = 0
 # ketika j kurang dari 6 lakukan perulangan, jika tidak stop perulangan
-while j <= 6:
+while j < 6:
     # lakukan perintah ini keetika perulangan
-    print("Ini adlah perulangan ke -", j)
+    print("Ini adalah perulangan ke -", j)
     # setiap kali diakhir perulangan update nilai dengan ditambah 1
     j = j+1
