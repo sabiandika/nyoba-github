@@ -24,3 +24,15 @@ print("perulangan for 1")
 for i in range(1, 6):
     # perintah jika looping akan tetap berjalan
     print("ini adalah perulangan ke :", i)
+
+
+# perulangan for 2
+print("perulangan for 2")
+for i in range(1, 11):
+    if (i % 2 == 0):
+        print("Angka genap :", i)
+    else:
+        print("Angka ganjil:", i)
+# kenapa ad dua dan nol pada if, karna (%2) berfungsi sebagai pembagi/modulus sedangkan (0) adalah sisa bagi.
+# cara kerja adalah apabila sisa bagi nya nol maka program akan stop pada if.
+# dan jika sisa bagi bukan nol maka program akan lanjut pada else. dan akan mengulang sebanyak yang diminta pada range.
