@@ -1,3 +1,4 @@
+import math as m
 i = 5
 
 if (i == 5):
@@ -66,3 +67,11 @@ def luas_segitiga(alas, tinggi):
 # pemanggilan fungsi
 # 4 dam 6 merupakan parameter yang diinputkan kedalam fungsi luas segitiga
 print("Luas segitiga: %d" % luas_segitiga(4, 6))
+
+
+# penggunaan library
+# menggunakan m sebagai module rename atau alias
+# penggunaan import tidak harus ditaruh di paling atas
+
+# m.pi merupakan sintak untuk memanggil fungsi
+print("Nilai pi adalah:", m.pi)
