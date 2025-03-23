@@ -69,9 +69,10 @@ def luas_segitiga(alas, tinggi):
 print("Luas segitiga: %d" % luas_segitiga(4, 6))
 
 
-# penggunaan library
+# PENGGUNAAN LIBRARY
 # menggunakan m sebagai module rename atau alias
-# penggunaan import tidak harus ditaruh di paling atas
+# (import math as m) contoh penggunaan library math, library harus di taruh di paling atas
+# namun apabila ingin menaruh penggunan dari library tsb contoh(print"Nilai pi adalah:", m.pi) bebas boleh di taruh dimana pun
 
 # m.pi merupakan sintak untuk memanggil fungsi
 print("Nilai pi adalah:", m.pi)
