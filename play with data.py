@@ -37,3 +37,20 @@ with closing(requests.get(url, stream=True)) as r:
 # plt.show() #{show berguna untuk menampilkan chart}
 
 # (harusnya gausah pake #, # disini fungsinya supaya import ini gak naik ke atas)
+
+
+# MENGUBAH NILAI
+#   Mengimport library Pandas
+# import pandas as pd
+# pd.set_option("display.max_column", 10)   #{Mengatur opsi pandas untuk menampilkan maksimal 10 kolom.}
+#   Membaca dataset
+# dataset_credit_scoring = pd.read_excel('https://storage.googleapis.com/dqlab-dataset/credit_scoring_dqlab.xlsx')   #{Membaca dataset credit_scoring dari file Excel yang di-host di URL tertentu.}
+
+#   Membuat dataset
+# dataset = dataset_credit_scoring[['pendapatan_setahun_juta', 'kpr_aktif', 'durasi_pinjaman_bulan', 'jumlah_tanggungan', 'rata_rata_overdue', 'risk_rating']]    #{ Membuat dataset baru yang hanya berisi kolom-kolom tertentu dari dataset_credit_scoring,}
+# print(dataset.head())     #{Menampilkan lima baris pertama dari dataset yang baru dibuat.}
+
+#   Mengubah data kpr_aktif menjadi tipe integer: 'YA' = 1 dan 'TIDAK' = 0
+# dataset['kpr_aktif'] = dataset['kpr_aktif'].replace(['YA', 'TIDAK'], [1, 0])  #{Mengubah data pada kolom 'kpr_aktif' menjadi tipe integer, di mana 'YA' akan diubah menjadi 1 dan 'TIDAK' akan diubah menjadi 0.}
+# print("\ndataset setelah kpr_aktif menjadi kolom numerik")
+# print(dataset.head())
