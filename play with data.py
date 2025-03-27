@@ -53,4 +53,4 @@ with closing(requests.get(url, stream=True)) as r:
 #   Mengubah data kpr_aktif menjadi tipe integer: 'YA' = 1 dan 'TIDAK' = 0
 # dataset['kpr_aktif'] = dataset['kpr_aktif'].replace(['YA', 'TIDAK'], [1, 0])  #{Mengubah data pada kolom 'kpr_aktif' menjadi tipe integer, di mana 'YA' akan diubah menjadi 1 dan 'TIDAK' akan diubah menjadi 0.}
 # print("\ndataset setelah kpr_aktif menjadi kolom numerik")
-# print(dataset.head())
+# print(dataset.head())     #{Menampilkan lima baris pertama dari dataset yang baru dibuat.}
