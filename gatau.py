@@ -1,5 +1,5 @@
 import math as m
-i = 5
+i = int(input("Masukkan Angka: "))
 
 if (i == 5):
     print("ini angka 5")
