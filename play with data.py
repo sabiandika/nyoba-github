@@ -41,29 +41,3 @@ plt.title('Persebaran Jumlah Penduduk Laki- Laki di Jakarta Pusat')
 plt.show()  # {show berguna untuk menampilkan chart}
 
 # (harusnya gausah pake #, # disini fungsinya supaya import ini gak naik ke atas)
-
-
-# MENGUBAH NILAI
-print("MENGUBAH NILAI")
-
-# {Mengatur opsi pandas untuk menampilkan maksimal 10 kolom.}
-pd.set_option("display.max_column", 10)
-
-# Membaca dataset
-# {Membaca dataset credit_scoring dari file Excel yang di-host di URL tertentu.}
-dataset_credit_scoring = pd.read_excel(
-    'https://storage.googleapis.com/dqlab-dataset/credit_scoring_dqlab.xlsx')
-
-# Membuat dataset
-# { Membuat dataset baru yang hanya berisi kolom-kolom tertentu dari dataset_credit_scoring,}
-dataset = dataset_credit_scoring[['pendapatan_setahun_juta', 'kpr_aktif',
-                                  'durasi_pinjaman_bulan', 'jumlah_tanggungan', 'rata_rata_overdue', 'risk_rating']]
-# {Menampilkan lima baris pertama dari dataset yang baru dibuat.}
-print(dataset.head())
-
-# Mengubah data kpr_aktif menjadi tipe integer: 'YA' = 1 dan 'TIDAK' = 0
-# {Mengubah data pada kolom 'kpr_aktif' menjadi tipe integer, di mana 'YA' akan diubah menjadi 1 dan 'TIDAK' akan diubah menjadi 0.}
-dataset['kpr_aktif'] = dataset['kpr_aktif'].replace(['YA', 'TIDAK'], [1, 0])
-print("\ndataset setelah kpr_aktif menjadi kolom numerik")
-# {Menampilkan lima baris pertama dari dataset yang baru dibuat.}
-print(dataset.head())
