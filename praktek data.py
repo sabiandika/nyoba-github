@@ -12,3 +12,8 @@ total_harga = harga_sepatu + harga_baju + harga_celana
 total_pajak = total_harga * 0.1
 # Cetak total_harga + total_pajak
 print(f"Jadi Harga Yang Harus Dibayar Adalah: ", total_harga + total_pajak)
+
+
+x = 5
+if x < 6 and x > 4:
+    print(x)
