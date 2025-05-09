@@ -16,6 +16,7 @@ print(f"Jadi Harga Yang Harus Dibayar Adalah: ", total_harga + total_pajak)
 
 
 print("Chapter 2")
+# OPSI 1
 # Kode awal
 total_harga = 150000
 potongan_harga = 0.3
